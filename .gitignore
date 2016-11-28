@@ -1,47 +1,58 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+*.jpg
+*.gif
+*.png
 
-# Folder config file
-Desktop.ini
+img
+resources
+galleries
+shared/
+bower_components/
+files/
+node_modules/
+cache/
+compilation_cache/
+vendor/
+config.php
+blog/sites/default/settings.php
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+###capistrano
+#############
+current
+releases/
+repo/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+*composer.lock
+*composer.phar
+*error_log
 
-# Windows shortcuts
-*.lnk
+#Packages#
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# =========================
-# Operating System Files
-# =========================
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
 
-# OSX
-# =========================
-
+# OS generated files #
+######################
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
+.DS_Store?
 ._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
 .Spotlight-V100
-.TemporaryItems
 .Trashes
-.VolumeIcon.icns
+ehthumbs.db
+Thumbs.db
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+**/.sass-cache
+**/.sass-cache/*
